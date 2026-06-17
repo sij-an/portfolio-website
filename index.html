@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090c14" />
+  <!-- <meta name="description" content="Sijan Upreti's personal portfolio website — modern, interactive, and built for GitHub Pages." /> -->
+  <title>Sijan Upreti</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-progress" id="pageProgress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <a class="nav-logo" href="#home" aria-label="Go to home">
+      SijanInsights<span class="dot">.</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section home-section" id="home">
+      <div class="noise"></div>
+
+      <div class="hero-content">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Student · Learner · Researcher</p>
+          <h1 class="hero-name">Sijan<br /><span class="accent">Upreti</span></h1>
+          <p class="hero-role">
+            <span class="typed" id="typedRole"></span>
+          </p>
+          <p class="hero-description">
+            I design and build polished digital experiences with a clean aesthetic, interactive motion, and a learner’s mindset that keeps evolving.
+          </p>
+
+          <div class="hero-actions">
+            <a href="Resume.pdf" class="btn btn-primary" download>
+              <i class="fa-solid fa-download"></i>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-paper-plane"></i>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card reveal">
+              <!-- <span class="stat-number" data-count="6" >0</span> -->
+               <span class="stat-number" data-count="6" data-suffix="+">0</span>
+              <span class="stat-label">Core skills</span>
+            </div>
+            <div class="stat-card reveal">
+              <!-- <span class="stat-number" data-count="5">5</span> -->
+               <span class="stat-number" data-count="5" data-suffix="+">0</span>
+              <span class="stat-label">Key milestones</span>
+            </div>
+            <div class="stat-card reveal">
+              <!-- <span class="stat-number" data-count="100">0</span> -->
+               <span class="stat-number" data-count="100" data-suffix="%">0</span>
+              <span class="stat-label">% effort, always</span>
+            </div>
+            <div class="stat-card reveal">
+              <!-- <span class="stat-number" data-count="10">0</span> -->
+               <span class="stat-number" data-count="10" data-suffix="+">0</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-shell">
+            <div class="photo-ring"></div>
+            <div class="photo-ring photo-ring-alt"></div>
+            <div class="hero-photo">
+              <img src="sijan.png" alt="Portrait of Sijan Upreti" />
+            </div>
+          </div>
+          <div class="floating-note note-top">
+            <i class="fa-solid fa-sparkles"></i>
+            <span>Hi There!</span>
+          </div>
+          <div class="floating-note note-bottom">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span>Welcome🙏</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">01 / About</p>
+          <h2 class="section-title">Who Am I?</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Hi, I'm <strong>Sijan Upreti</strong> — an aspiring developer who enjoys crafting clean, modern, and user-friendly digital experiences.
+              I like building projects that feel polished, fast, and visually thoughtful.
+            </p>
+            <p>
+              My focus is on web development, design, and creative problem solving. I enjoy exploring new tools, strengthening my technical skills,
+              and turning ideas into projects that feel real and useful.
+            </p>
+
+            <div class="about-actions">
+              <a href="#skills" class="inline-link">
+                Explore skills
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="about-panel reveal">
+            <div class="about-chip-grid">
+              <span class="tag">Kathmandu, Nepal</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">UI / UX Taste</span>
+              <span class="tag">Cybersecurity Learner</span>
+              <span class="tag">Python Builder</span>
+              <span class="tag">Game Dev Curiosity</span>
+              <span class="tag">Always Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">02 / Skills</p>
+          <h2 class="section-title">What I Bring</h2>
+          <p class="section-subtitle">
+            A blend of technical thinking, visual sense, and a strong interest in building useful things.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Frontend Development</h3>
+            <p>Responsive layouts, clean structure, and interactive interfaces that feel smooth across devices.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+            <h3>Python</h3>
+            <p>Logic-heavy programs, automation ideas, and problem solving with Python’s flexibility.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>Graphic Designing</h3>
+            <p>Visual compositions, posters, and digital assets with a modern and refined aesthetic.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Cybersecurity Fundamentals</h3>
+            <p>Core awareness of secure thinking, digital safety, and best practices in the online world.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3>Project Ideation & Research</h3>
+            <p>Turning rough ideas into structured concepts and practical digital solutions.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-gamepad"></i></div>
+            <h3>Game Development</h3>
+            <p>Building playful interactive experiences, mechanics, and creative prototypes.</p>
+          </article>
+
+          <article class="skill-card skill-card-highlight reveal">
+            <div class="skill-icon"><i class="fa-solid fa-ellipsis"></i></div>
+            <h3>And Many More</h3>
+            <p>New tools, frameworks, and creative workflows keep getting added as I continue learning and building.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">03 / Achievements</p>
+          <h2 class="section-title">Top 5 Milestones</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="achievement-card reveal">
+            <div class="ach-number">01</div>
+            <div class="ach-body">
+              <div class="ach-badge"><i class="fa-solid fa-certificate"></i> Google Certification</div>
+              <h3>Foundations of Cybersecurity</h3>
+              <p>Completed Google’s professional cybersecurity course covering core security concepts, threat awareness, and digital protection basics.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card reveal">
+            <div class="ach-number">02</div>
+            <div class="ach-body">
+              <div class="ach-badge"><i class="fa-solid fa-trophy"></i> HackClub Certification</div>
+              <h3>Game Jam by HackClub</h3>
+              <p>Participated in a creative game jam experience, shaping and developing a 2D game under time constraints with a team.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card reveal">
+            <div class="ach-number">03</div>
+            <div class="ach-body">
+              <div class="ach-badge"><i class="fa-solid fa-star"></i> Robotics Certification</div>
+              <h3>Robotics Fundamentals</h3>
+              <p>Joined a hands-on robotics workshop and explored the foundations of components, mechanisms, and real-world concepts.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card reveal">
+            <div class="ach-number">04</div>
+            <div class="ach-body">
+              <div class="ach-badge"><i class="fa-solid fa-flag"></i> Full-Stack Certification</div>
+              <h3>Full-Stack Development</h3>
+              <p>Participated in a full-stack learning program and explored both frontend and backend thinking in one flow.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card reveal">
+            <div class="ach-number">05</div>
+            <div class="ach-body">
+              <div class="ach-badge"><i class="fa-solid fa-shield"></i> WCTQEE Certification</div>
+              <h3>National Delegate</h3>
+              <p>Participated in the HUB Convention and was selected for the International Convention, helping represent my institution at a global stage.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">04 / Contact</p>
+          <h2 class="section-title">Let’s Connect</h2>
+          <p class="section-subtitle">
+            Open to projects, collaborations, and genuine conversations.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-links">
+            <a href="https://www.instagram.com/sijan_uprt" target="_blank" rel="noreferrer" class="contact-card reveal">
+              <div class="contact-icon instagram-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="contact-info">
+                <span class="contact-platform">Instagram</span>
+                <span class="contact-handle">@sijan_uprt</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+
+            <a href="https://www.facebook.com/sijan.upreti" target="_blank" rel="noreferrer" class="contact-card reveal">
+              <div class="contact-icon facebook-icon"><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="contact-info">
+                <span class="contact-platform">Facebook</span>
+                <span class="contact-handle">sijan.upreti</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+
+            <a href="mailto:enquiry.sijan@gmail.com" class="contact-card reveal">
+              <div class="contact-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-info">
+                <span class="contact-platform">Email</span>
+                <span class="contact-handle">sijanupreti42@gmail.com</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sijan-upreti-667699356/" target="_blank" rel="noreferrer" class="contact-card reveal">
+              <div class="contact-icon linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-info">
+                <span class="contact-platform">LinkedIn</span>
+                <span class="contact-handle">sijan-upreti</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+
+            <a href="https://github.com/sijan-64" target="_blank" rel="noreferrer" class="contact-card reveal">
+              <div class="contact-icon github-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-info">
+                <span class="contact-platform">GitHub</span>
+                <span class="contact-handle">sijan-64</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+          </div>
+
+          <div class="message-card reveal">
+            <div class="message-card-header">
+              <span class="message-badge"><i class="fa-solid fa-paper-plane"></i> Message me</span>
+              <h3>Send a note directly</h3>
+              <p>Fill in your details and the message will be delivered to my email.</p>
+            </div>
+
+            <form class="contact-form" onsubmit="return false;">
+  
+  <div class="form-group">
+    <input type="text" id="name" name="name" required placeholder=" ">
+    <label for="name">Your Name</label>
+    <span class="form-line"></span>
+  </div>
+
+  <div class="form-group">
+    <input type="email" id="email" name="email" required placeholder=" ">
+    <label for="email">Your Email</label>
+    <span class="form-line"></span>
+  </div>
+
+  <div class="form-group">
+    <input type="text" id="subject" name="subject" required placeholder=" ">
+    <label for="subject">Subject</label>
+    <span class="form-line"></span>
+  </div>
+
+  <div class="form-group">
+    <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+    <label for="message">Your Message</label>
+    <span class="form-line"></span>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-full">
+    <span>Send Message</span>
+    <i class="fas fa-paper-plane"></i>
+  </button>
+
+</form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; Built by <span class="accent">Sijan Upreti</span> · 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- form submit that doesn't work -->
+  <div id="popup" class="popup">
+  <div class="popup-content">
+    <p>❌ This didn't work. Please contact me via other media in the contact section.</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<!-- script for up thing -->
+<script>
+  const form = document.querySelector(".contact-form");
+  const popup = document.getElementById("popup");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    popup.style.display = "flex";
+  });
+
+  function closePopup() {
+    popup.style.display = "none";
+  }
+</script>
+
+</body>
+</html>
