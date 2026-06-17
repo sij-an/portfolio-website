@@ -155,3 +155,4 @@ const statsObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 countEls.forEach((el) => statsObserver.observe(el));
+// done!!
