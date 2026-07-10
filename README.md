@@ -22,4 +22,4 @@ This is my simple personal portfolio website built to showcase my projects, skil
 2. Open `index.html` in your browser
 
 ## Author
-SIJAN UPRETI
+Sijan Upreti
