@@ -127,7 +127,7 @@ function animateCount(el) {
   
   
   
-  // change later for '+'
+  // changed later for '+' in the end of the number!!!
   
     if (progress < 1) {
   requestAnimationFrame(frame);
