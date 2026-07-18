@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090c14" />
+  <title>Increasing Cases of Suicide — SijanInsights</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* =========================================
+       ARTICLE PAGE — SCOPED STYLES
+    ========================================= */
+    .article-page {
+      min-height: 100vh;
+      padding: 8rem 0 5rem;
+    }
+
+    .article-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 2.5rem;
+      transition: color var(--transition);
+    }
+
+    .article-back i {
+      transition: transform var(--transition);
+    }
+
+    .article-back:hover {
+      color: var(--text);
+    }
+
+    .article-back:hover i {
+      transform: translateX(-4px);
+    }
+
+    .article-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .article-page-category {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(0, 229, 192, 0.08);
+      border: 1px solid rgba(0, 229, 192, 0.2);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-page-title {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-page-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .article-page-meta i {
+      color: var(--accent-2);
+      margin-right: 0.3rem;
+    }
+
+    .article-hero-img {
+      width: 100%;
+      aspect-ratio: 21 / 9;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .article-hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .article-body {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .article-body h2 {
+      font-family: var(--font-head);
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-top: 2.5rem;
+      margin-bottom: 0.8rem;
+      color: var(--text);
+    }
+
+    .article-body p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.85;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-body strong {
+      color: var(--text);
+    }
+
+    .article-body blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.4rem;
+      margin: 1.8rem 0;
+      background: rgba(0, 229, 192, 0.04);
+      border-radius: 0 16px 16px 0;
+      color: var(--text);
+      font-style: italic;
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+
+    .article-body ul {
+      margin: 1rem 0 1.4rem 1.2rem;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.85;
+    }
+
+    .article-body ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-body ul li::marker {
+      color: var(--accent);
+    }
+
+    .article-divider {
+      width: 60px;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      margin: 3rem auto;
+      border: none;
+    }
+
+    .article-footer-note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .article-footer-note strong {
+      color: var(--accent);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+
+  <main>
+    <section class="article-page">
+      <div class="container">
+
+        <a href="index.html#articles" class="article-back">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Back to Articles</span>
+        </a>
+
+        <div class="article-header">
+          <span class="article-page-category">Awareness</span>
+          <h1 class="article-page-title">Increasing Cases of Suicide</h1>
+          <div class="article-page-meta">
+            <span><i class="fa-regular fa-calendar"></i> Jul 10, 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+            <span><i class="fa-solid fa-user-pen"></i> Sijan Upreti</span>
+          </div>
+        </div>
+
+        <div class="article-hero-img">
+          <img src="suicide.png" alt="Increasing Cases of Suicide — Cover" />
+        </div>
+
+        <article class="article-body">
+
+          <p>
+            Suicide is one of the most painful topics to talk about — and perhaps that is exactly why we need to talk
+            about it more. Around the world, the numbers keep climbing quietly. According to the World Health
+            Organization, more than <strong>700,000 people</strong> die by suicide every year, and for each death, there
+            are many more who attempt it. Behind every statistic is a real person, a real story, and a circle of people
+            left asking <em>"what could I have done?"</em>
+          </p>
+
+          <h2>Why Are Cases Rising?</h2>
+
+          <p>
+            There is no single cause. Suicide is the result of a complex mix of factors — mental health struggles,
+            financial stress, loneliness, bullying, academic pressure, relationship breakdowns, and sometimes, the sheer
+            feeling that there is no way out. In recent years, a few trends have made things worse:
+          </p>
+
+          <ul>
+            <li><strong>Social media pressure:</strong> The constant comparison, cyberbullying, and curated perfection
+              on social platforms can make anyone feel inadequate or isolated, especially young people.</li>
+            <li><strong>Academic and career stress:</strong> In many cultures, the weight of expectations from family
+              and society creates unbearable pressure on students and young professionals.</li>
+            <li><strong>Post-pandemic loneliness:</strong> COVID-19 severed social connections for millions. Even as the
+              world reopened, the emotional damage lingered — anxiety, depression, and grief became widespread.</li>
+            <li><strong>Stigma around mental health:</strong> In many communities, admitting you are struggling is still
+              seen as weakness. This stops people from seeking help when they need it the most.</li>
+          </ul>
+
+          <h2>The Silent Struggle</h2>
+
+          <p>
+            One of the most heartbreaking things about suicide is how invisible the warning signs can be. People who are
+            suffering often smile through their pain. They go to school, show up at work, laugh with friends — all while
+            fighting a battle no one else can see. We have built a world where people feel safer hiding their pain than
+            sharing it, and that is something we urgently need to change.
+          </p>
+
+          <blockquote>
+            "The person who dies by suicide doesn't want to end their life — they want to end their pain."
+          </blockquote>
+
+          <h2>What Can We Do?</h2>
+
+          <p>
+            We don't need to be therapists or counselors to make a difference. Sometimes, the simplest actions carry the
+            most weight:
+          </p>
+
+          <ul>
+            <li><strong>Listen without judgment.</strong> If someone opens up to you, don't rush to give advice. Just
+              being heard can be healing.</li>
+            <li><strong>Check in on people.</strong> A simple "how are you, really?" can open doors that a casual
+              greeting never will.</li>
+            <li><strong>Normalize seeking help.</strong> Talk openly about therapy, mental health days, and emotional
+              well-being. Remove the shame around it.</li>
+            <li><strong>Be kind online.</strong> Words on a screen carry real weight. What feels like a harmless comment
+              to you could be devastating to someone already on the edge.</li>
+            <li><strong>Know the resources.</strong> Familiarize yourself with helpline numbers and crisis support
+              services in your area so you can share them when it matters.</li>
+          </ul>
+
+          <h2>A Note to Anyone Struggling</h2>
+
+          <p>
+            If you are reading this and you are going through something difficult — please know that your pain is valid,
+            but it is not permanent. The darkness you feel right now does not define the rest of your life. There are
+            people who care about you, even when it feels like no one does. Reaching out is not a sign of weakness — it
+            is the bravest thing you can do.
+          </p>
+
+          <p>
+            You are not a burden. You matter. And the world is better with you in it.
+          </p>
+
+          <hr class="article-divider" />
+
+          <p class="article-footer-note">
+            If you or someone you know is in crisis, please reach out to a local helpline.<br />
+            <strong>You are not alone.</strong>
+          </p>
+
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; Built by <span class="accent">Sijan Upreti</span> · 2025</p>
+  </footer>
+
+  <script>
+    // Cursor glow for article page
+    const cursorGlow = document.getElementById("cursorGlow");
+    document.addEventListener("mousemove", (e) => {
+      cursorGlow.style.left = `${e.clientX}px`;
+      cursorGlow.style.top = `${e.clientY}px`;
+    });
+  </script>
+</body>
+
+</html>

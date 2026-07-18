@@ -1,3 +1,64 @@
+// ARTICLES DATA & RENDERING
+
+
+
+
+// script for article begin!!!
+const articles = [
+  {
+    title: "Increasing Cases of Suicide",
+    description: "A reflection on the rising global suicide rates, the silent struggles behind them, and why open conversations about mental health are more important than ever.",
+    date: "Jul 10, 2026",
+    category: "Awareness",
+    readTime: "6 min read",
+    image: "suicide.png",
+    link: "article-suicide.html"
+  }
+];
+
+function renderArticles() {
+  const articlesGrid = document.getElementById("articlesGrid");
+  if (!articlesGrid) return;
+
+  articlesGrid.innerHTML = articles.map(art => `
+    <article class="article-card reveal">
+      <div class="article-image">
+        <img src="${art.image}" alt="${art.title}" loading="lazy" />
+        <span class="article-category">${art.category}</span>
+      </div>
+      <div class="article-content">
+        <div class="article-meta">
+          <span class="article-date"><i class="fa-regular fa-calendar"></i> ${art.date}</span>
+          <span class="article-read-time"><i class="fa-regular fa-clock"></i> ${art.readTime}</span>
+        </div>
+        <h3 class="article-title">${art.title}</h3>
+        <p class="article-desc">${art.description}</p>
+        <a href="${art.link}" class="btn-read-article">
+          <span>Read Article</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+  `).join('');
+}
+
+function openArticleModal(title) {
+  // Placeholder for future modal-based article viewing.
+  // Currently, articles navigate directly via their link property.
+}
+
+// Execute rendering before observers initialize
+renderArticles();
+
+
+
+
+
+
+// script for article ends!!!
+
+
+
 const navbar = document.getElementById("navbar");
 const navLinks = document.getElementById("navLinks");
 const hamburger = document.getElementById("hamburger");
@@ -124,18 +185,18 @@ function animateCount(el) {
     const progress = Math.min((now - start) / duration, 1);
     const value = Math.floor(progress * target);
     el.textContent = value.toString().padStart(target >= 100 ? 3 : 1, "0").replace(/^0+(?=\d)/, "");
-  
-  
-  
-  // changed later for '+' in the end of the number!!!
-  
+
+
+
+    // change later for '+'
+
     if (progress < 1) {
-  requestAnimationFrame(frame);
-} else {
-  // el.textContent = target + "+";
-  const suffix = el.dataset.suffix || "";
-el.textContent = target + suffix;
-}
+      requestAnimationFrame(frame);
+    } else {
+      // el.textContent = target + "+";
+      const suffix = el.dataset.suffix || "";
+      el.textContent = target + suffix;
+    }
 
 
 
