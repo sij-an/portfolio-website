@@ -1,6 +1,7 @@
 /* =========================================
    RESET & ROOT VARIABLES
 ========================================= */
+
 *,
 *::before,
 *::after {
@@ -686,6 +687,7 @@ img {
   padding: 1px;
   background: linear-gradient(135deg, rgba(0, 229, 192, 0.42), rgba(124, 108, 252, 0.36), transparent 70%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   opacity: 0;
@@ -1334,6 +1336,7 @@ over written for contact form .contact-form {
   padding: 1px;
   background: linear-gradient(135deg, rgba(0, 229, 192, 0.42), rgba(124, 108, 252, 0.36), transparent 70%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   opacity: 0;
@@ -1418,6 +1421,7 @@ over written for contact form .contact-form {
   color: var(--text);
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1429,6 +1433,7 @@ over written for contact form .contact-form {
   margin-bottom: 1.4rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

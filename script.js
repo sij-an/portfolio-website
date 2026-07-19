@@ -16,6 +16,10 @@ const articles = [
   }
 ];
 
+
+
+
+
 function renderArticles() {
   const articlesGrid = document.getElementById("articlesGrid");
   if (!articlesGrid) return;
