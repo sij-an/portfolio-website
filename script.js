@@ -71,11 +71,10 @@ const cursorGlow = document.getElementById("cursorGlow");
 const typedRole = document.getElementById("typedRole");
 
 const rolePhrases = [
-  "Aspiring Developer & Creative Builder",
-  "Frontend Enthusiast",
-  "Python Learner",
-  "Cybersecurity Explorer",
-  "Design-Minded Problem Solver"
+  "AI Explorer",
+  "Student Researcher",
+  "Mathematics Buff",
+  "Ocassional Coder",
 ];
 
 let phraseIndex = 0;
