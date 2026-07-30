@@ -13,6 +13,21 @@ const articles = [
     readTime: "6 min read",
     image: "suicide.png",
     link: "article-suicide.html"
+  },
+
+
+// check,,,
+// nothing more
+
+
+  {
+    title: "article check",
+    description: "A reflection on the rising global suicide rates, the silent struggles behind them, and why open conversations about mental health are more important than ever.",
+    date: "Jul 10, 2026",
+    category: "Awareness",
+    readTime: "6 min read",
+    image: "suicide.png",
+    link: "check.html"
   }
 ];
 
