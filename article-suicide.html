@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#090c14" />
+  <meta name="theme-color" content="#FBF9F5" />
   <title>Increasing Cases of Suicide — SijanInsights</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
@@ -29,10 +29,11 @@
       align-items: center;
       gap: 0.5rem;
       color: var(--accent);
-      font-weight: 700;
+      font-weight: 600;
       font-size: 0.9rem;
       margin-bottom: 2.5rem;
       transition: color var(--transition);
+      text-decoration: none;
     }
 
     .article-back i {
@@ -55,8 +56,8 @@
       display: inline-block;
       padding: 0.35rem 0.85rem;
       border-radius: 999px;
-      background: rgba(0, 229, 192, 0.08);
-      border: 1px solid rgba(0, 229, 192, 0.2);
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
       color: var(--accent);
       font-size: 0.75rem;
       font-weight: 700;
@@ -67,23 +68,26 @@
 
     .article-page-title {
       font-family: var(--font-head);
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 800;
-      line-height: 1.1;
-      letter-spacing: -0.03em;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
       margin-bottom: 1.2rem;
+      color: var(--text);
     }
 
     .article-page-meta {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.2rem;
+      gap: 1.5rem;
       color: var(--muted);
       font-size: 0.88rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
     }
 
     .article-page-meta i {
-      color: var(--accent-2);
+      color: var(--accent);
       margin-right: 0.3rem;
     }
 
@@ -93,7 +97,8 @@
       border-radius: var(--radius);
       overflow: hidden;
       border: 1px solid var(--border);
-      margin-bottom: 3rem;
+      margin-block: 2.5rem 3rem;
+      box-shadow: var(--shadow-sm);
     }
 
     .article-hero-img img {
@@ -103,51 +108,54 @@
     }
 
     .article-body {
-      max-width: 780px;
+      max-width: 760px;
       margin: 0 auto;
     }
 
     .article-body h2 {
       font-family: var(--font-head);
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-top: 2.5rem;
-      margin-bottom: 0.8rem;
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-top: 2.8rem;
+      margin-bottom: 1rem;
       color: var(--text);
+      letter-spacing: -0.01em;
     }
 
     .article-body p {
-      color: var(--muted);
-      font-size: 1.05rem;
+      color: var(--text-muted);
+      font-size: 1.08rem;
       line-height: 1.85;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.4rem;
     }
 
     .article-body strong {
       color: var(--text);
+      font-weight: 600;
     }
 
     .article-body blockquote {
       border-left: 3px solid var(--accent);
-      padding: 1rem 1.4rem;
-      margin: 1.8rem 0;
-      background: rgba(0, 229, 192, 0.04);
-      border-radius: 0 16px 16px 0;
+      padding: 1.2rem 1.6rem;
+      margin: 2.2rem 0;
+      background: var(--bg-subtle);
+      border-radius: 0 12px 12px 0;
       color: var(--text);
+      font-family: var(--font-head);
       font-style: italic;
-      font-size: 1.08rem;
-      line-height: 1.7;
+      font-size: 1.25rem;
+      line-height: 1.6;
     }
 
     .article-body ul {
-      margin: 1rem 0 1.4rem 1.2rem;
-      color: var(--muted);
-      font-size: 1.02rem;
+      margin: 1.2rem 0 1.6rem 1.4rem;
+      color: var(--text-muted);
+      font-size: 1.05rem;
       line-height: 1.85;
     }
 
     .article-body ul li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
 
     .article-body ul li::marker {
@@ -156,17 +164,18 @@
 
     .article-divider {
       width: 60px;
-      height: 3px;
+      height: 2px;
       border-radius: 999px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-      margin: 3rem auto;
+      background: var(--accent);
+      margin: 3.5rem auto;
       border: none;
+      opacity: 0.6;
     }
 
     .article-footer-note {
       text-align: center;
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.98rem;
       margin-top: 1rem;
       margin-bottom: 2rem;
     }
