@@ -297,7 +297,7 @@ img {
   transition: var(--transition);
 }
 
-.hamburger span + span {
+.hamburger span+span {
   margin-top: 6px;
 }
 
@@ -669,7 +669,7 @@ img {
   line-height: 1.8;
 }
 
-.about-text p + p {
+.about-text p+p {
   margin-top: 1.2rem;
 }
 
@@ -783,10 +783,7 @@ img {
   line-height: 1.7;
 }
 
-.skill-card-highlight {
-  background: var(--bg-elevated);
-  border-color: var(--border-strong);
-}
+
 
 /* =========================================
    ACHIEVEMENTS SECTION
@@ -1180,10 +1177,10 @@ img {
 }
 
 /* Floating label effect */
-.form-group input:focus ~ label,
-.form-group input:not(:placeholder-shown) ~ label,
-.form-group textarea:focus ~ label,
-.form-group textarea:not(:placeholder-shown) ~ label {
+.form-group input:focus~label,
+.form-group input:not(:placeholder-shown)~label,
+.form-group textarea:focus~label,
+.form-group textarea:not(:placeholder-shown)~label {
   transform: translateY(-24px);
   font-size: 0.78rem;
   font-weight: 600;
@@ -1310,10 +1307,13 @@ img {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(-100%);
     opacity: 0.3;
   }
+
   50% {
     transform: translateY(100%);
     opacity: 1;
@@ -1324,6 +1324,7 @@ img {
    RESPONSIVE BREAKPOINTS
 ========================================= */
 @media (max-width: 980px) {
+
   .hero-content,
   .contact-layout,
   .about-grid {
