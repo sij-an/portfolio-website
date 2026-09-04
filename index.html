@@ -37,7 +37,7 @@
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#articles" class="nav-link">Articles</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -220,63 +220,118 @@
       </div>
     </section>
 
-    <section class="section achievements-section" id="achievements">
+    <section class="section projects-section" id="projects">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-label">03 / Achievements</p>
-          <h2 class="section-title">Top 5 Milestones</h2>
+          <p class="section-label">03 / Projects</p>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            A selection of things I've built — from games and web apps to AR experiments and CLI tools.
+          </p>
         </div>
 
-        <div class="timeline">
-          <article class="achievement-card reveal">
-            <div class="ach-number">01</div>
-            <div class="ach-body">
-              <div class="ach-badge"><i class="fa-solid fa-certificate"></i> Google Certification</div>
-              <h3>Foundation of Cybersecurity</h3>
-              <p>Completed basic cybersecurity course covering core security concepts, threat awareness, and digital
-                protection basics.</p>
+        <div class="projects-grid">
+          <!-- Project 1: Escape -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fa-solid fa-gamepad"></i></div>
+              <span class="project-type">2D Game</span>
+            </div>
+            <h3 class="project-name">Escape</h3>
+            <p class="project-desc">
+              Kai falls into an ancient cave with no way to call for help. Armed with only a flickering torch, he must find the hidden ladder before time runs out — and before whatever lurks in the darkness finds him first.
+            </p>
+            <div class="project-details">
+              <span class="project-detail"><i class="fa-solid fa-keyboard"></i> Arrow keys</span>
+              <span class="project-detail"><i class="fa-solid fa-bullseye"></i> Find the ladder in 30s</span>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">GameMaker</span>
+              <span class="tech-tag">GML</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sijan-64.itch.io/escape" target="_blank" rel="noreferrer" class="btn btn-primary btn-sm project-btn-play">
+                <i class="fa-solid fa-play"></i> Play Game
+              </a>
+              <a href="https://github.com/sij-an/GAME" target="_blank" rel="noreferrer" class="btn btn-secondary btn-sm">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
             </div>
           </article>
 
-          <article class="achievement-card reveal">
-            <div class="ach-number">02</div>
-            <div class="ach-body">
-              <div class="ach-badge"><i class="fa-solid fa-trophy"></i> HackClub Certification</div>
-              <h3>Game Jam by HackClub</h3>
-              <p>Participated in a creative game jam experience, shaping and developing a 2D game under time constraints
-                with a team.</p>
+          <!-- Project 2: Reminders -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fa-solid fa-bell"></i></div>
+              <span class="project-type">Web App</span>
+            </div>
+            <h3 class="project-name">Reminders</h3>
+            <p class="project-desc">
+              A clean, lightweight reminder and task-management web app. Runs entirely in the browser without a build step, with tasks stored locally so they remain available on the same device and browser.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sij-an.github.io/Reminders/" target="_blank" rel="noreferrer" class="btn btn-secondary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/sij-an/Reminders" target="_blank" rel="noreferrer" class="btn btn-secondary btn-sm">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
             </div>
           </article>
 
-          <article class="achievement-card reveal">
-            <div class="ach-number">03</div>
-            <div class="ach-body">
-              <div class="ach-badge"><i class="fa-solid fa-star"></i> Robotics Certification</div>
-              <h3>Robotics Fundamentals</h3>
-              <p>Joined a hands-on robotics workshop and explored the foundations of components, mechanisms, and
-                real-world concepts.</p>
+          <!-- Project 3: Basic Unit Converter -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fa-solid fa-calculator"></i></div>
+              <span class="project-type">Python CLI</span>
             </div>
+            <h3 class="project-name">Basic Unit Converter</h3>
+            <p class="project-desc">
+              A Python command-line program that converts values between different units. Select the conversion type, choose original and target units, enter a value, and get the result — supporting multiple measurement categories in one program.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+            </div>
+            <!-- No links for this project -->
           </article>
 
-          <article class="achievement-card reveal">
-            <div class="ach-number">04</div>
-            <div class="ach-body">
-              <div class="ach-badge"><i class="fa-solid fa-flag"></i> Full-Stack Certification</div>
-              <h3>Full-Stack Development</h3>
-              <p>Participated in a full-stack learning program and explored both frontend and backend thinking in one
-                flow.</p>
+          <!-- Project 4: GestureAR -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+              <span class="project-type">Augmented Reality</span>
+            </div>
+            <h3 class="project-name">GestureAR</h3>
+            <p class="project-desc">
+              A real-time augmented reality application that uses a webcam to render an anime-style energy orb between the user's hands. The orb reacts dynamically to hand gestures — growing, shrinking, pulsating, and fading based on movement.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">MediaPipe</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sij-an/dragonball" target="_blank" rel="noreferrer" class="btn btn-secondary btn-sm">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
             </div>
           </article>
+        </div>
 
-          <article class="achievement-card reveal">
-            <div class="ach-number">05</div>
-            <div class="ach-body">
-              <div class="ach-badge"><i class="fa-solid fa-shield"></i> WCTQEE Certification</div>
-              <h3>National Delegate</h3>
-              <p>Participated in the HUB Convention and was selected for the International Convention, helping represent
-                my institution at a global stage.</p>
-            </div>
-          </article>
+        <!-- Other Projects Subsection -->
+        <div class="other-projects-wrapper reveal">
+          <div class="other-projects-heading">
+            <h3 class="other-projects-title">Other Projects</h3>
+            <p class="other-projects-subtitle">Smaller projects I built during high school — showing my early programming experience and progression.</p>
+          </div>
+          <div class="other-projects-grid">
+            <!-- Placeholder cards — details to be added later -->
+          </div>
         </div>
       </div>
     </section>
