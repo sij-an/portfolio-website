@@ -935,13 +935,17 @@ img {
 
 /* --- Other Projects Subsection --- */
 .other-projects-wrapper {
-  margin-top: 3.5rem;
-  padding-top: 2.5rem;
-  border-top: 1px solid var(--border);
+  margin-top: 1.5rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
 .other-projects-heading {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .other-projects-title {
@@ -963,6 +967,10 @@ img {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.other-projects-grid:not(:empty) {
+  margin-top: 1.5rem;
 }
 
 /* =========================================
@@ -1560,7 +1568,8 @@ img {
   .about-text,
   .about-panel,
   .skill-card,
-  .project-card {
+  .project-card,
+  .other-projects-wrapper {
     padding: 1.5rem;
     border-radius: var(--radius);
   }

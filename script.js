@@ -6,6 +6,15 @@
 // script for article begin!!!
 const articles = [
   {
+    title: "What Nepal Must Do Before AI Becomes Mainstream",
+    description: "AI is rapidly changing education, business, and healthcare. Here is how Nepal can prepare its infrastructure, education, and policies before AI becomes mainstream.",
+    date: "Sep 4, 2026",
+    category: "Technology",
+    readTime: "4 min read",
+    image: "ai.png",
+    link: "article-nepal-ai.html"
+  },
+  {
     title: "Increasing Cases of Suicide",
     description: "A reflection on the rising global suicide rates, the silent struggles behind them, and why open conversations about mental health are more important than ever.",
     date: "Jul 10, 2026",
@@ -13,22 +22,7 @@ const articles = [
     readTime: "6 min read",
     image: "suicide.png",
     link: "article-suicide.html"
-  },
-
-
-// check,,,
-// nothing more
-
-
-  // {
-  //   title: "article check",
-  //   description: "A reflection on the rising global suicide rates, the silent struggles behind them, and why open conversations about mental health are more important than ever.",
-  //   date: "Jul 10, 2026",
-  //   category: "Awareness",
-  //   readTime: "6 min read",
-  //   image: "suicide.png",
-  //   link: "check.html"
-  // }
+  }
 ];
 
 
