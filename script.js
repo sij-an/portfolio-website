@@ -11,17 +11,15 @@ const articles = [
     date: "Sep 4, 2026",
     category: "Technology",
     readTime: "4 min read",
-    image: "ai.png",
-    link: "article-nepal-ai.html"
+    link: "https://medium.com/@sijanupreti42/what-nepal-must-do-before-ai-becomes-mainstream-5a3193531309"
   },
   {
-    title: "Increasing Cases of Suicide",
+    title: "Your Life Matters",
     description: "A reflection on the rising global suicide rates, the silent struggles behind them, and why open conversations about mental health are more important than ever.",
     date: "Jul 10, 2026",
     category: "Awareness",
     readTime: "6 min read",
-    image: "suicide.png",
-    link: "article-suicide.html"
+    link: "https://medium.com/@sijanupreti42/your-life-matters-925a3f8610b1"
   }
 ];
 
@@ -34,24 +32,31 @@ function renderArticles() {
   if (!articlesGrid) return;
 
   articlesGrid.innerHTML = articles.map(art => `
-    <article class="article-card reveal">
-      <div class="article-image">
-        <img src="${art.image}" alt="${art.title}" loading="lazy" />
+    <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="article-card reveal" aria-label="${art.title}">
+      <div class="article-card-header">
         <span class="article-category">${art.category}</span>
+        <span class="article-platform">
+          <i class="fa-brands fa-medium"></i>
+          <span>Medium</span>
+          <i class="fa-solid fa-arrow-up-right-from-square article-ext-icon"></i>
+        </span>
       </div>
       <div class="article-content">
-        <div class="article-meta">
-          <span class="article-date"><i class="fa-regular fa-calendar"></i> ${art.date}</span>
-          <span class="article-read-time"><i class="fa-regular fa-clock"></i> ${art.readTime}</span>
-        </div>
         <h3 class="article-title">${art.title}</h3>
         <p class="article-desc">${art.description}</p>
-        <a href="${art.link}" class="btn-read-article">
+      </div>
+      <div class="article-card-footer">
+        <div class="article-meta">
+          <span class="article-date"><i class="fa-regular fa-calendar"></i> ${art.date}</span>
+          <span class="article-dot">·</span>
+          <span class="article-read-time"><i class="fa-regular fa-clock"></i> ${art.readTime}</span>
+        </div>
+        <span class="btn-read-article">
           <span>Read Article</span>
           <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        </span>
       </div>
-    </article>
+    </a>
   `).join('');
 }
 
